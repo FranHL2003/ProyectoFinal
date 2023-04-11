@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #e4edeb, #516d80);
+    background: linear-gradient(to bottom, #cef9cf, #f67b3d);
     font-family: Arial, sans-serif;
     margin:0;
   }
@@ -62,7 +62,7 @@ color:white}
   .card {
     width: 40%;
     margin-right: 10px;
-    margin-left: 55px;
+    margin-left: 65px;
     margin-bottom: 40px;
     border: 1px solid #ccc;
     padding: 40px;

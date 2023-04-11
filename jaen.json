@@ -4,25 +4,184 @@
 	},
 	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67e2",
 	"properties": {
-		"x": 37.7652193,
-		"y": -3.7918577,
+		"x": 37.76512,
+		"y": -3.78983,
 		"nombre": "CATEDRAL DE JAÉN",
-		"direccion": "PLAZA CATEDRAL",
-		"horario": "NO VISITABLE",
-		"telefono": "952060104"
+		"direccion": " Pl. Sta. María, 23002 Jaén",
+		"horario": "VISITABLE",
+		"telefono": "953 23 42 33"
+	}
+	
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "jaen2",
+	"properties": {
+		"x": 37.76460,
+		"y": -3.79052,
+		"nombre": "AYUNTAMIENTO DE JAÉN",
+		"direccion": " Pl. Sta. María, 23002 Jaén",
+		"horario": "VISITABLE",
+		"telefono": "953 21 91 00"
 	}
 },
 {
 	"_id": {
 		"$oid": "63d83aec2f4f290af4bb0fbd"
 	},
-	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67e2",
+	"id": "jaen3",
 	"properties": {
-		"x": 37.7651924,
-		"y": -3.7920228,
-		"nombre": "AYUNTAMIENTO DE JAÉN",
-		"direccion": "PLAZA CATEDRAL",
-		"horario": "NO VISITABLE",
-		"telefono": "952060104"
+		"x": 37.76657,
+		"y": -3.78649,
+		"nombre": "BASÍLICA DE SAN ILDEFONSO",
+		"direccion": "Pl. San Ildefonso, s/n, 23001 Jaén",
+		"horario": "VISITABLE",
+		"telefono": "953 19 03 46"
 	}
-}]
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "jaen4",
+	"properties": {
+		"x": 37.76747,
+		"y": -3.79954,
+		"nombre": "CASTILLO DE SANTA CATALINA",
+		"direccion": "Carr. al Castillo y el Neveral, 23004 Jaén",
+		"horario": "VISITABLE",
+		"telefono": "953 12 07 33"
+	}
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "jaen5",
+	"properties": {
+		"x": 37.78884,
+		"y": -3.79108,
+		"nombre": "PARQUE DE ANDRÉS DE VANDELVIRA",
+		"direccion": "",
+		"horario": "VISITABLE",
+		"telefono": "NO DISPONE"
+	}
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "jaen6",
+	"properties": {
+		"x": 37.76276,
+		"y": -3.79302,
+		"nombre": "CAMARÍN DE NUESTRO PADRE JESÚS NAZARENO",
+		"direccion": " C. Carrera de Jesús, 23002 Jaén",
+		"horario": "VISITABLE",
+		"telefono": "953 23 98 42"
+	}
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "jaen6",
+	"properties": {
+		"x": 37.77616,
+		"y": -3.79016,
+		"nombre": "MUSEO ÍBERO DE JAEN",
+		"direccion": "P.º de la Estación, 41, 23008 Jaén",
+		"horario": "VISITABLE",
+		"telefono": " 953 00 16 92"
+	}
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "jaen7",
+	"properties": {
+		"x": 37.76635,
+		"y": -3.78938,
+		"nombre": "PALACIO PROVINCIAL DE JAÉN(DIPUTACIÓN)",
+		"direccion": "Pl. de San Francisco, 23004 Jaén",
+		"horario": "VISITABLE",
+		"telefono": "953 24 80 00"
+	}
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "jaen8",
+	"properties": {
+		"x": 37.76721,
+		"y": -3.78422,
+		"nombre": "PUERTA DEL ÁNGEL",
+		"direccion": "Calle Puerta del ángel",
+		"horario": "VISITABLE",
+		"telefono": "NO DISPONE"
+	}
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "jaen9",
+	"properties": {
+		"x": 37.77188,
+		"y": -3.79650,
+		"nombre": "IGLESIA SANTA MARÍA MAGDALENA",
+		"direccion": "Plaza de la Magdalena",
+		"horario": "VISITABLE",
+		"telefono": "953 19 00 31"
+	}
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "jaen10",
+	"properties": {
+		"x": 37.76738,
+		"y": -3.78262,
+		"nombre": "PLAZA DE TOROS DE JAÉN",
+		"direccion": "Alameda de Adolfo Suárez, 2, 23003 Jaén",
+		"horario": "VISITABLE",
+		"telefono": "953 24 11 00"
+	}
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "jaen11",
+	"properties": {
+		"x": 37.76630,
+		"y": -3.79144,
+		"nombre": "PALACIO DEL CONDESTABLE IRANZO",
+		"direccion": "Calle Maestra",
+		"horario": "VISITABLE",
+		"telefono": "NO DISPONE"
+	}
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "jaen12",
+	"properties": {
+		"x": 37.77271,
+		"y": -3.78760,
+		"nombre": "PARQUE DE LA CONCORDIA",
+		"direccion": "Calle Baeza, 1, 23008 Jaén",
+		"horario": "VISITABLE",
+		"telefono": "953 21 91 00"
+	}
+}
+
+
+
+]
