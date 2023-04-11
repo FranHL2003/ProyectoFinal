@@ -180,7 +180,37 @@
 		"horario": "VISITABLE",
 		"telefono": "953 21 91 00"
 	}
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "jaen13",
+	"properties": {
+		"x": 37.76764,
+		"y": -3.79093,
+		"nombre": "IGLESIA DE SAN BARTOLOMÉ",
+		"direccion": "Pl. San Bartolomé, 7, 23004 Jaén",
+		"horario": "VISITABLE",
+		"telefono": "953 23 64 63"
+	}
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "jaen13",
+	"properties": {
+		"x": 37.77937,
+		"y": -3.75444,
+		"nombre": "PABELLÓN OLIVO ARENA",
+		"direccion": "Prolongación Carretera de Granada",
+		"horario": "VISITABLE",
+		"telefono": "953 08 69 80"
+	}
 }
+
+
 
 
 
