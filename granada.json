@@ -1,0 +1,48 @@
+[{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "granada1",
+	"properties": {
+		"x": 37.17632,
+		"y": -3.59918,
+		"nombre": "CATEDRAL DE GRANADA",
+		"direccion": "C. Gran Vía de Colón, 5, 18001 Granada",
+		"horario": "VISITABLE",
+		"telefono": "958 22 29 59"
+	}
+	
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "granada2",
+	"properties": {
+		"x": 37.17657,
+		"y": -3.59053,
+		"nombre": "ALHAMBRA DE GRANADA",
+		"direccion": " C. Real de la Alhambra, s/n, 18009 Granada",
+		"horario": "VISITABLE",
+		"telefono": "958 02 79 71"
+	}
+	
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "granada3",
+	"properties": {
+		"x": 37.18323,
+		"y": -3.57712,
+		"nombre": "ABADÍA DEL SACROMONTE",
+		"direccion": "calle siete cuestas",
+		"horario": "VISITABLE",
+		"telefono": "958 22 14 45"
+	}
+	
+}
+
+
+]
