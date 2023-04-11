@@ -1,0 +1,28 @@
+[{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67e2",
+	"properties": {
+		"x": 37.7652193,
+		"y": -3.7918577,
+		"nombre": "CATEDRAL DE JAÉN",
+		"direccion": "PLAZA CATEDRAL",
+		"horario": "NO VISITABLE",
+		"telefono": "952060104"
+	}
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "da_rutasArqueologicas.fid-678917ee_180ff2b48ea_-67e2",
+	"properties": {
+		"x": 37.7651924,
+		"y": -3.7920228,
+		"nombre": "AYUNTAMIENTO DE JAÉN",
+		"direccion": "PLAZA CATEDRAL",
+		"horario": "NO VISITABLE",
+		"telefono": "952060104"
+	}
+}]
