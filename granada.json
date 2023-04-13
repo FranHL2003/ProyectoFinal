@@ -42,7 +42,38 @@
 		"telefono": "958 22 14 45"
 	}
 	
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "granada4",
+	"properties": {
+		"x": 37.17321,
+		"y": -3.59451,
+		"nombre": "IGLESIA DE SANTO DOMINGO",
+		"direccion": "Pl. de Sto. Domingo, 1, 18009 Granada",
+		"horario": "VISITABLE",
+		"telefono": "958 22 73 31"
+	}
+	
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "granada4",
+	"properties": {
+		"x": 37.16995,
+		"y": -3.59660,
+		"nombre": "BASILICA VIRGEN DE LAS ANGUSTIAS",
+		"direccion": "calle Carrera de la Virgen, 42",
+		"horario": "VISITABLE",
+		"telefono": "958 22 63 93"
+	}
+	
 }
+
 
 
 ]
