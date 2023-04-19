@@ -147,7 +147,32 @@
 		"telefono": "952 73 96 62"
 	}
 	
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "antequera11",
+	"properties": {
+		"x": 37.01533,
+		"y": -4.55963,
+		"nombre": "IGLESIA DE LA PAZ",
+		"direccion": "Carretera de la Paz",
+		"horario": "VISITABLE",
+		"telefono": "No dispone"
+	}
+	
 }
+
+
+
+
+
+
+
+
+
+
 
 
 

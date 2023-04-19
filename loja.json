@@ -1,0 +1,46 @@
+[{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "loja1",
+	"properties": {
+		"x": 37.16705,
+		"y": -4.15190,
+		"nombre": "ALCAZABA DE LOJA",
+		"direccion": "Calle Boabdil, 8",
+		"horario": "VISITABLE",
+		"telefono": "958 32 43 42"
+	}
+	
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "loja2",
+	"properties": {
+		"x": 37.16622,
+		"y": -4.15194,
+		"nombre": "IGLESIA MAYOR DE LA ENCARNACIÓN",
+		"direccion": "Calle La Real,6",
+		"horario": "VISITABLE",
+		"telefono": "958 32 01 71"
+	}
+	
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "loja3",
+	"properties": {
+		"x": 37.16622,
+		"y": -4.15194,
+		"nombre": "PALACIO DEL GENERAL NARVÁEZ",
+		"direccion": "Calle Mesón del Arroyo",
+		"horario": "VISITABLE",
+		"telefono": "653 87 39 21"
+	}
+	
+} 
+]

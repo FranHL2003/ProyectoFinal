@@ -1,5 +1,5 @@
 //cargar mapa
-let map = L.map('mapaMalaga').setView([37.1718,-3.5960], 14);
+let map = L.map('mapaMalaga').setView([37.1352,-6.4760], 14);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', 
 {maxZoom: 19,attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
 
@@ -8,7 +8,7 @@ let template = document.querySelector("template");
 let interior = document.querySelector("#contenido");
 let id = 0;
 
-fetch("granada.json") 
+fetch("almonte.json") 
  .then(response => response.json())
   .then(data => {
    data.forEach( function(element){
@@ -20,6 +20,7 @@ fetch("granada.json")
     position.querySelector("p").innerText = element.properties.horario;
     position.querySelector("#direccion").innerText = element.properties.direccion;
     position.querySelector("#telefono").innerText = element.properties.telefono;
+    
    
     let x = element.properties.x;
     let y = element.properties.y;
@@ -34,16 +35,21 @@ fetch("granada.json")
     });
 
 
-    let polygon = L.polygon([
-        [37.17632, -3.59918],
-        [37.17657, -3.59053],
-        [37.17407, -3.59878]  
-    ]).addTo(map);
+   /* // Seleccionar todos los botones
+let botones = document.querySelectorAll("button");
+
+// Agregar evento click a cada botón
+botones.forEach(function(boton) {
+  boton.addEventListener("click", function() {
+    // Obtener la URL correspondiente para este elemento
+    let url = data[boton.parentNode.parentNode.id].properties.url;
     
-    polygon.bindPopup("I am a polygon.");
+    // Redirigir la página a la URL
+    window.location.href = url;
+  });
+});
 
-
-
+*/
    })
 
    //ventana modal

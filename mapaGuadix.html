@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mapaMalaga.css">
+    <title>Francisco Herrera Lorenzale</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+          <div class="logo">
+            <a href="/inicio_img/Toro_de_Osborne.svg_1.png"></a>
+            
+          </div>
+          <a href="inicio.html"><h1>PASEA POR TU HISTORIA</h1></a>
+          <nav>
+            <ul class="menu">
+              <li><a href="#">Sobre nosotros</a></li>
+              <li><a href="#">Galería</a></li>
+              <li><a href="#">Curiosidades</a></li>
+            </ul>
+            <div class="toggle">
+              <i class="fas fa-bars"></i>
+            </div>
+          </nav>
+        </div>
+      </header>
+    <main class="vw-100 vh-100 d-flex justify-content-center " >
+        
+        <div id="mapaMalaga" class="w-100 h-100 " ></div>
+    
+        
+        
+        <div class="h-100 col-3 p-1 overflow-auto">
+          
+         <ul id ="contenido" class="list-group mt-3 ">
+            <template> 
+                <h2>Descubre :</h2>
+              <li id = lista class="rojo list-group-item p-3  " title="texto">
+               
+                <h4></h4>
+                <p></p>
+                <table>
+                  <th>
+                    <p ><span id="direccion" class="badge bg-primary "></span></p>
+                  </th>
+                  <th>
+                    <p ><span id="telefono" class="badge bg-primary "></span></p>
+                  </th>
+                </table>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"  #exampleModal>Ver detalles</button>
+            </li>
+            </template>
+          </ul>    
+        </div>
+      </main>
+
+  
+      
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Detalles de la localización</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h4></h4>
+                <p></p>
+                <table>
+                  <th>
+                    <p ><span id="direccionModal" class="badge bg-primary "></span></p>
+                  </th>
+                  <th>
+                    <p ><span id="telefonoModal" class="badge bg-primary "></span></p>
+                  </th>
+                </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="container">
+          <ul class="social-media">
+            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+          <div class="links">
+            <a href="#">Aviso legal</a>
+            <a href="#">Sobre cookies</a>
+          </div>
+        </div>
+      </footer>
+
+      
+
+
+
+
+<!-- Make sure you put this AFTER Leaflet's CSS -->
+ <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+ integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+ crossorigin=""></script>   
+     
+ <script src="mapaGuadix.js"></script>
+</body>
+</html>

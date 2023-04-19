@@ -6,23 +6,32 @@ body {
   a{text-decoration: none;
     color:white}
   
+ 
+
   header {
     background-color: #1abc9c;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
   }
-
+  
+  .container {
+    flex: 1;
+  }
+  .logo img {
+    max-width: 60px;
+    height: auto;
+  }
   
   .logo {
-    font-size: 32px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    cursor: pointer;
+    margin-left: auto;
+   
+  }
+  .logo {
+    margin-right: 70px;
   }
 
 
@@ -85,58 +94,132 @@ body {
     color: #fff;
     text-decoration: none;
   }
+
+  .cloud {
+    background-image: url("https://i.imgur.com/JnBxouK.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px;
+    text-align: center;
+  }
   
-  .video-container {
+  .titulo {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 50%;
+    border: 5px solid rgb(162, 162, 179);
+    text-shadow: 2px 2px 2px #094339;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: #56c622;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  
+
+  
+  
+  
+
+  main {
+    padding: 20px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    text-align: center;
   }
-  .video-container iframe {
+  
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .tarjeta {
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .tarjeta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tarjeta img {
     max-width: 100%;
-    max-height: 100%;
+    height: 200px
   }
   
-  div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 180px;
+  .destacado {
+ 
+    background-color: #e5e2d5;
+    padding: 30px 50px;
+    margin: 20px;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%);
   }
   
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
+  .destacado p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
     text-align: center;
   }
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 1rem;
+  border-color: #4CAF50;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+td:first-child {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
   table {
-    border-collapse: collapse;
-    margin: auto;
-    max-width: 600px;
+    font-size: 0.8rem;
   }
-  th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: center;
-  }
-  th {
-    background-color: #2196F3;
-    color: white;
-  }
-  .row1 {
-    background-color: #BBDEFB;
-  }
-  .row2 {
-    background-color: #64B5F6;
-    color: white;
-  }
+}
+
+.horario-container {
+  border: 2px solid black;
+  background-color: #e5e2d5;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+}

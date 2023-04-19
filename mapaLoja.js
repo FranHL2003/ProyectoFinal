@@ -1,5 +1,5 @@
 //cargar mapa
-let map = L.map('mapaMalaga').setView([37.1718,-3.5960], 14);
+let map = L.map('mapaMalaga').setView([37.1676,-4.1451], 15);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', 
 {maxZoom: 19,attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
 
@@ -8,7 +8,7 @@ let template = document.querySelector("template");
 let interior = document.querySelector("#contenido");
 let id = 0;
 
-fetch("granada.json") 
+fetch("loja.json") 
  .then(response => response.json())
   .then(data => {
    data.forEach( function(element){
@@ -32,15 +32,6 @@ fetch("granada.json")
     interior.appendChild(container);
     id++
     });
-
-
-    let polygon = L.polygon([
-        [37.17632, -3.59918],
-        [37.17657, -3.59053],
-        [37.17407, -3.59878]  
-    ]).addTo(map);
-    
-    polygon.bindPopup("I am a polygon.");
 
 
 
