@@ -6,25 +6,31 @@ body {
 
   a{text-decoration: none;
 color:white}
-  
-  header {
-    background-color: #1abc9c;
+header {
+  background-color: #1abc9c;
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   width: 100%;
-  }
+}
 
-  
-  .logo {
-    font-size: 32px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    cursor: pointer;
-  }
+.container {
+  flex: 1;
+}
+.logo img {
+  max-width: 60px;
+  height: auto;
+}
+
+.logo {
+  margin-left: auto;
+ 
+}
+.logo {
+  margin-right: 70px;
+}
 
 
   

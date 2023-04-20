@@ -1,6 +1,6 @@
 
 
-var map = L.map('mapa').setView([37.7716, -3.7870], 15);
+var map = L.map('mapa').setView([38.0130, -3.3673], 15);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     minZoom: 14,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -28,7 +28,7 @@ function cargarModal(){
 }
 
 
-fetch("jaen.json")
+fetch("ubeda.json")
     .then(res => res.json())
     .then(data => {
         const tbody = document.querySelector("#listaElementos");
@@ -68,8 +68,4 @@ fetch("jaen.json")
 
 
     })
-
-
-
-
 

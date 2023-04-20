@@ -1,0 +1,48 @@
+[{
+	"_id": {
+		"$oid": "jodar11"
+	},
+	"id": "jodar1",
+	"properties": {
+		"x": 37.84481,
+		"y": -3.35287,
+		"nombre": "PARROQUIA DE LA ASUNCIÓN",
+		"direccion": "Calle Juan Martín,1",
+		"horario": "VISITABLE",
+		"telefono": "953 78 51 57"
+	}
+
+},
+{
+	"_id": {
+		"$oid": "jodar22"
+	},
+	"id": "jodar2",
+	"properties": {
+		"x": 37.84496,
+		"y": -3.35379,
+		"nombre": "CASTILLO MEDIEVAL DE JÓDAR",
+		"direccion": "Calle Alhorí, 16",
+		"horario": "Disponible",
+		"telefono": "953 77 97 18"
+	}
+
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "jodar3",
+	"properties": {
+		"x": 37.84269,
+		"y": -3.35144,
+		"nombre": "IGLESIA DEL SANTO CRISTO DE LA MISERICÓRDIA",
+		"direccion": "Calle Santo Cristo, 35",
+		"horario": "Disponible",
+		"telefono": "953 78 51 57(Asunción)"
+	}
+
+}
+
+
+]

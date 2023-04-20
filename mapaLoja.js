@@ -1,40 +1,75 @@
-//cargar mapa
-let map = L.map('mapaMalaga').setView([37.1676,-4.1451], 15);
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', 
-{maxZoom: 19,attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
 
-//json y localizaciones 
-let template = document.querySelector("template");
-let interior = document.querySelector("#contenido");
-let id = 0;
 
-fetch("loja.json") 
- .then(response => response.json())
-  .then(data => {
-   data.forEach( function(element){
-    let container = document.createElement("div");
-    container.classList.add('localizacion')
+var map = L.map('mapa').setView([37.1676, -4.1445], 15);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    minZoom: 14,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
 
-    let position = template.content.cloneNode(true);
-    position.querySelector("h4").innerText = element.properties.nombre;
-    position.querySelector("p").innerText = element.properties.horario;
-    position.querySelector("#direccion").innerText = element.properties.direccion;
-    position.querySelector("#telefono").innerText = element.properties.telefono;
-   
-    let x = element.properties.x;
-    let y = element.properties.y;
-  
-    let marker = L.marker([x, y]).addTo(map);
-    let label = '<b>' + element.properties.nombre + '</b><br/>' + element.properties.direccion;
-    
-    marker.bindPopup(label);
-    container.appendChild(position);
-    interior.appendChild(container);
-    id++
-    });
+
+var lista = []
+var elementoSeleccionado = 0;
 
 
 
-   })
+function cargarModal(){
+    let elemento = lista[0]
+    let nombre = document.getElementById('nombreElemento')
+    let direccion = document.getElementById('direccionElemento')
+    let horario = document.getElementById('horarioElemento')
+    let telefono = document.getElementById('telefonoElemento')
+    direccion.classList.add('mb-2')
+    horario.classList.add('mb-2')
+    telefono.classList.add('mb-2')
+    nombre.textContent = elemento.nombre
+    direccion.textContent = elemento.direccion
+    horario.textContent = elemento.horario
+    telefono.textContent = elemento.telefono
+}
 
-   //ventana modal
+
+fetch("loja.json")
+    .then(res => res.json())
+    .then(data => {
+        const tbody = document.querySelector("#listaElementos");
+        const template = document.querySelector('#elementoLista');
+        for (let i = 0; i < data.length; i++) {
+            // Clone the new row and insert it into the table
+            const clone = template.content.cloneNode(true);
+            let nombre = clone.getElementById('nombre')
+            let horario = clone.getElementById('horario')
+            let direccion = clone.getElementById('direccion')
+            let telefono = clone.getElementById('telefono')
+            nombre.textContent = data[i].properties.nombre;
+            horario.textContent = data[i].properties.horario;
+            direccion.textContent = data[i].properties.direccion;
+            telefono.textContent = data[i].properties.telefono;
+            if (telefono.textContent != "") {
+                telefono.classList.add('tarjeta')
+            }
+            tbody.appendChild(clone);
+
+            let elemento = {
+                nombre: data[i].properties.nombre,
+                horario: data[i].properties.horario,
+                direccion: data[i].properties.direccion,
+                telefono: data[i].properties.telefono,
+            }
+            lista.push(elemento)
+            
+            template.addEventListener('click', 
+                cargarModal()
+            )
+
+            var marcador = L.marker([data[i].properties.x, data[i].properties.y]).addTo(map);
+            marcador.bindPopup(`${data[i].properties.nombre}`);
+
+        }
+
+
+    })
+
+
+
+
+

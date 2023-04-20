@@ -1,6 +1,6 @@
 
 
-var map = L.map('mapa').setView([37.7716, -3.7870], 15);
+var map = L.map('mapa').setView([36.72071131817986, -4.420041081375409], 13);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     minZoom: 14,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -28,7 +28,7 @@ function cargarModal(){
 }
 
 
-fetch("jaen.json")
+fetch('https://raw.githubusercontent.com/FRomero999/ExamenDIW2022/main/rutas_arqueologicas.json')
     .then(res => res.json())
     .then(data => {
         const tbody = document.querySelector("#listaElementos");
@@ -68,6 +68,8 @@ fetch("jaen.json")
 
 
     })
+
+
 
 
 
