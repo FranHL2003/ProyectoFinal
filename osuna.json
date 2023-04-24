@@ -1,0 +1,32 @@
+[{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "osuna1",
+	"properties": {
+		"x": 37.23757,
+		"y": -5.10074,
+		"nombre": "COLEGIATA DE NUESTRA SEÑORA DE LA ASUNCIÓN",
+		"direccion": "Plaza de la Encarnación",
+		"horario": "VISITABLE",
+		"telefono": "954 81 04 44"
+	}
+	
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "osuna2",
+	"properties": {
+		"x": 37.23715,
+		"y": -5.10302,
+		"nombre": "AYUNTAMIENTO DE OSUNA",
+		"direccion": "Plaza Mayor,1",
+		"horario": "VISITABLE",
+		"telefono": "954 81 58 51"
+	}
+	
+}
+]
+

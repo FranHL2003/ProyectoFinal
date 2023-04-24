@@ -1,0 +1,81 @@
+[{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "lucena1",
+	"properties": {
+		"x": 37.37628,
+		"y": -4.46636,
+		"nombre": "SANTUARIO VIRGEN DE ARACELI(PATRONA)",
+		"direccion": "Carretera del Santuario",
+		"horario": "VISITABLE",
+		"telefono": "no dispone"
+	}
+	
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "lucena2",
+	"properties": {
+		"x": 37.40818,
+		"y": -4.48365,
+		"nombre": "CASTILLO DEL MORAL",
+		"direccion": " Plaza de España,1",
+		"horario": "VISITABLE",
+		"telefono": "957 50 36 62"
+	}
+	
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "lucena3",
+	"properties": {
+		"x": 37.40818,
+		"y": -4.48408,
+		"nombre": "PARROQUIA DE SAN MATEO",
+		"direccion": " Plaza de San Miguel",
+		"horario": "VISITABLE",
+		"telefono": "957 50 07 75"
+	}
+	
+},
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "lucena4",
+	"properties": {
+		"x": 37.40874,
+		"y": -4.48532,
+		"nombre": "AYUNTAMIENTO DE LUCENA",
+		"direccion": " Plaza Nueva",
+		"horario": "VISITABLE",
+		"telefono": "957 50 04 10"
+	}
+
+},
+
+{
+	"_id": {
+		"$oid": "63d83aec2f4f290af4bb0fbd"
+	},
+	"id": "lucena6",
+	"properties": {
+		"x": 37.40752,
+		"y": -4.48654,
+		"nombre": "IGLESOA DE SAN MARTÍN + CONVENTO DE MADRES AUGUSTINAS RECOLETAS ",
+		"direccion": "Calle San Pedro",
+		"horario": "VISITABLE",
+		"telefono": "957 50 01 75"
+	}
+    
+}
+
+
+
+
+]
