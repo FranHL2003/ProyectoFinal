@@ -8,7 +8,15 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 var lista = []
-var elementoSeleccionado = 0;
+var elementoSeleccionado = 0
+
+for (let i = 0; i < lista.length; i++) {
+    let elemento = lista[i];
+    nombre.textContent = elemento.nombre;
+    direccion.textContent = elemento.direccion;
+    horario.textContent = elemento.horario;
+    telefono.textContent = elemento.telefono;
+}
 
 
 
@@ -26,6 +34,8 @@ function cargarModal(){
     horario.textContent = elemento.horario
     telefono.textContent = elemento.telefono
 }
+
+
 
 
 fetch("jodar.json")
