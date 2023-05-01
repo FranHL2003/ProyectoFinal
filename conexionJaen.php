@@ -1,31 +1,42 @@
 <?php
+
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "ciudades";
+$username = "tu_usuario";
+$password = "tu_contraseña";
+$dbname = "tu_base_de_datos";
 
-// Crea la conexión con la base de datos
-$conn = new mysqli($servername, $username, $password, $dbname);
+// Crea la conexión
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 
-// Verifica si se ha establecido la conexión
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
+// Verifica si la conexión se ha establecido correctamente
+if (!$conn) {
+  die("Error de conexión: " . mysqli_connect_error());
 }
 
-// Consulta SQL para obtener los datos de la tabla ciudades que contengan "jaen" en el campo id
+// Crea una consulta SQL para seleccionar los datos que contienen "jaen" en el campo id
 $sql = "SELECT * FROM ciudades WHERE id LIKE '%jaen%'";
 
-$result = $conn->query($sql);
+// Ejecuta la consulta y almacena el resultado en una variable
+$resultado = mysqli_query($conn, $sql);
 
-if ($result->num_rows > 0) {
-    // Imprime los datos de cada fila
-    while($row = $result->fetch_assoc()) {
-        echo "Nombre: " . $row["nombre"]. " - Dirección: " . $row["direccion"].  " - Horario: " . $row["horario"]." - Teléfono: " . $row["telefono"]." - Categoria: " . $row["categoria"]." - Ver: " . $row["ver"]." - Latitud: " . $row["latitud"]." - Longitud: " . $row["longitud"]. "<br>";
-    }
-} else {
-    echo "No se encontraron resultados.";
-}
+// Recorre cada fila del resultado
+while($fila = mysqli_fetch_assoc($resultado)) {
+    // Muestra los datos de la fila
+    echo "ID: " . $fila["id"] . "<br>";
+    echo "Nombre: " . $fila["nombre"] . "<br>";
+    echo "Categoría: " . $fila["categoria"] . "<br>";
+    echo "Dirección: " . $fila["direccion"] . "<br>";
+    echo "Teléfono: " . $fila["telefono"] . "<br>";
+    echo "Ver: " . $fila["ver"] . "<br>";
+    echo "Longitud: " . $fila["longitud"] . "<br>";
+    echo "Latitud: " . $fila["latitud"] . "<br><br>";
+  }
+  
 
-// Cierra la conexión con la base de datos
-$conn->close();
+//cerrar conexion
+mysqli_close($conn);
+
+
+
+
 ?>

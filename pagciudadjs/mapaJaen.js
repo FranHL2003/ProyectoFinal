@@ -22,10 +22,12 @@ function cargarModal(){
     direccion.classList.add('mb-2')
     horario.classList.add('mb-2')
     telefono.classList.add('mb-2')
+    categoria.classList.add('mb-2')
     nombre.textContent = elemento.nombre
     direccion.textContent = elemento.direccion
     horario.textContent = elemento.horario
     telefono.textContent = elemento.telefono
+    categoria.textContent=elemento.categoria
 }
 
 
