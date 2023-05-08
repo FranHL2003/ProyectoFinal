@@ -68,7 +68,7 @@ header {
   
   .card {
     width: 30%;
-    margin-right: 85px;
+    margin-right: 150px;
     margin-left: 85px;
     margin-bottom: 40px;
     border: 1px solid #ccc;
@@ -149,29 +149,3 @@ header {
     text-decoration: none;
   }
   
-  #hero {
-    min-height: 100vh;
-    position:relative;
-    
-  }
-
-  video{
-    position:absolute;
-    top:0;
-    width: 100%;
-    left:0;
-    height:100%;
-    object-fit:cover;
-  }
-
-  .capa{
-    position:absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height:100%;
-    background:#1c1c1d;
-    mix-blend-mode:overlay;
-    position:relative;
-    z-index: 2;
-  }

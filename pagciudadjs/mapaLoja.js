@@ -28,7 +28,7 @@ function cargarModal(){
 }
 
 
-fetch("loja.json")
+fetch("/Proyecto fin de grado/jsoncity/loja.json")
     .then(res => res.json())
     .then(data => {
         const tbody = document.querySelector("#listaElementos");
@@ -38,22 +38,25 @@ fetch("loja.json")
             const clone = template.content.cloneNode(true);
             let nombre = clone.getElementById('nombre')
             let horario = clone.getElementById('horario')
+            let categoria = clone.getElementById('categoria')
             let direccion = clone.getElementById('direccion')
             let telefono = clone.getElementById('telefono')
-            nombre.textContent = data[i].properties.nombre;
-            horario.textContent = data[i].properties.horario;
-            direccion.textContent = data[i].properties.direccion;
-            telefono.textContent = data[i].properties.telefono;
+            nombre.textContent = data[i].nombre;
+            horario.textContent = data[i].horario;
+            categoria.textContent = data[i].categoria;
+            direccion.textContent = data[i].direccion;
+            telefono.textContent = data[i].telefono;
             if (telefono.textContent != "") {
                 telefono.classList.add('tarjeta')
             }
             tbody.appendChild(clone);
 
             let elemento = {
-                nombre: data[i].properties.nombre,
-                horario: data[i].properties.horario,
-                direccion: data[i].properties.direccion,
-                telefono: data[i].properties.telefono,
+                nombre: data[i].nombre,
+                horario: data[i].horario,
+                categoria: data[i].categoria,
+                direccion: data[i].direccion,
+                telefono: data[i].telefono,
             }
             lista.push(elemento)
             
@@ -61,8 +64,8 @@ fetch("loja.json")
                 cargarModal()
             )
 
-            var marcador = L.marker([data[i].properties.x, data[i].properties.y]).addTo(map);
-            marcador.bindPopup(`${data[i].properties.nombre}`);
+            var marcador = L.marker([data[i].x, data[i].y]).addTo(map);
+            marcador.bindPopup(`${data[i].nombre}`);
 
         }
 

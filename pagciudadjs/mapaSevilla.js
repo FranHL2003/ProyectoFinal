@@ -1,10 +1,11 @@
 
 
-var map = L.map('mapa').setView([37.1809, -3.5983], 15);
+var map = L.map('mapa').setView([37.3952, -5.9787], 15);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     minZoom: 14,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+
 
 var lista = []
 var elementoSeleccionado = 0;
@@ -16,7 +17,7 @@ function cargarModal(){
 
 }
 
-fetch("http://localhost/Proyecto%20fin%20de%20grado/test.php?province=Granada")
+fetch("http://localhost/Proyecto%20fin%20de%20grado/test.php?province=Sevilla")
     .then(res => res.json())
     .then(data => {
         const tbody = document.querySelector("#listaElementos");
@@ -70,6 +71,13 @@ fetch("http://localhost/Proyecto%20fin%20de%20grado/test.php?province=Granada")
 
 
    // http://localhost/Proyecto%20fin%20de%20grado/test.php?province=jaen
+
+    
+
+
+
+
+
 
 
     

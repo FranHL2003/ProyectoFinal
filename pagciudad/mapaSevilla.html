@@ -10,10 +10,31 @@
         integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>TFG FRANCISCO HERRERA LORENZALE</title>
+    <title>MAPA DE SEVILLA</title>
 </head>
 
 <body>
+  <header>
+    <div class="container">
+    
+      <a href="inicio.html"><h1>SEVILLA</h1></a>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Galería</a></li>
+          <li><a href="#">Curiosidades</a></li>
+        </ul>
+      
+      </nav>
+    </div>
+
+    <div class="logo">
+      <a href="/Proyecto fin de grado/inicio_img/Toro_de_Osborne.svg_1.png"><img src="/Proyecto fin de grado/inicio_img/Toro_de_Osborne.svg_1.png" alt="Logo"></a>
+      
+    </div>
+    
+  </header>
+  <main>
 
     <div class="contenedor">
         <div class="row vh-100">
@@ -21,10 +42,15 @@
                 <template id="elementoLista">
                     <div class="p-3 elemento" id="elemento" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <div id="nombre" class="h5"></div>
-                        <div id="horario" class="mb-3"></div>
+                       <div id="ciudad" color="#0E6655 " ></div>
+                       <div id="categoria" class="mb-3"></div>
                         <div class="direccionYtelefono">
+            
                             <div id="direccion" class="tarjeta"></div>
                             <div id="telefono"></div>
+                            <div id="horario" class="tarjeta"></div>
+                            <div id="ver" href=""></div>
+                            </div>
                         </div>
 
                     </div>
@@ -40,25 +66,7 @@
     </div>
 
   
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="nombreElemento"></h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div id="direccionElemento"></div>
-          <div id="horarioElemento"></div>
-          <div id="telefonoElemento"></div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  
 
 
 
@@ -67,7 +75,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+      </main>
+      <footer>
+        <div class="container">
+          <ul class="social-media">
+            <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+          <div class="links">
+            <a href="#">Aviso legal</a>
+            <a href="#">Sobre cookies</a>
+          </div>
+        </div>
+      </footer>
+    
+    <script src="/Proyecto%20fin%20de%20grado/pagciudadjs/mapaSevilla.js"></script>
+  
 </body>
 
 </html>

@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Documento sin título</title>
+	<style>
+		table{
+			margin:auto;
+			width: 450px;
+			border: 1px solid red;
+			
+		}
+        footer {
+    background-color: #1abc9c;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+  }
+  
+  .social-media {
+    list-style: none;
+    display: flex;
+  }
+  
+  .social-media li {
+    margin-right: 20px;
+  }
+  
+  .social-media li a {
+    color: #fff;
+    text-decoration: none;
+    width: 100px;
+  }
+  
+  .links a {
+    margin-left: 20px;
+
+    color: #fff;
+    text-decoration: none;
+  }
+  body {
+    background: linear-gradient(to bottom, #cef9cf, #f67b3d);
+    font-family: Arial, sans-serif;
+    margin:0;
+  }
+
+  a{text-decoration: none;
+color:white}
+  header {
+  background-color: #1abc9c;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.container {
+  flex: 1;
+}
+.logo img {
+  max-width: 60px;
+  height: auto;
+}
+
+.logo {
+  margin-left: auto;
+ 
+}
+.logo {
+  margin-right: 70px;
+}
+
+
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-left: 20px;
+  }
+  
+  .menu li:first-child {
+    margin-left: 0;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+  }
+	</style>
+</head>
+
+<body>
+<header>
+    <div class="container">
+    
+      <a href="inicio.html"><h1>AÑADIR NUEVO ELEMENTO</h1></a>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Galería</a></li>
+          <li><a href="#">Curiosidades</a></li>
+        </ul>
+      
+      </nav>
+    </div>
+
+    <div class="logo">
+      <a href="/inicio_img/Toro_de_Osborne.svg_1.png"><img src="/inicio_img/Toro_de_Osborne.svg_1.png" alt="Logo"></a>
+      
+    </div>
+    
+  </header>
+	
+<!--CONSTRUIMOS UN FORMULARIO-->
+<main>	
+  <div>
+    <h1>RELLENE EL SIGUIENTE FORMULARIO</h1>
+  </div>
+    <div class="container">
+<form action="conectarbd.php" method="post" enctype="multipart/form-data">
+<!--OBLIGATORIAMENTE CON ARCHIVOS O IMAGENES EL MÉTODO TIENE QUE SER TIPO POST-->	
+
+	<table>
+		<tr>
+			<td><label for="archivo">Archivo:</label></td>
+			<td><input type="file" name="archivo" size="20"></td>
+		</tr>
+        <tr>
+			<td><label for="id">ID:</label></td>
+			<td><input type="text" name="Id" placeholder="ej:jaen19(así con todas)"></td>
+		</tr>
+        <tr>
+			<td><label for="nombre">NOMBRE:</label></td>
+			<td><input type="text" name="nombre" placeholder="introduzca el nombre del monumento"></td>
+		</tr>
+        <tr>
+			<td><label for="direccion">DIRECCIÓN:</label></td>
+			<td><input type="text" name="direccion" placeholder="introduzca la direccion"></td>
+		</tr>
+        <tr>
+			<td><label for="categoria">CATEGORÍA:</label></td>
+			<td><input type="text" name="categoria" placeholder="ponga una categoría"></td>
+		</tr>
+        <tr>
+            <td><label for="horario">HORARIO:</label></td>
+			<td><input type="text" name="horario" placeholder="breve"></td>
+		</tr>
+        <tr>
+            <td><label for="telefono">TELÉFONO:</label></td>
+			<td><input type="number" name="telefono" placeholder="escriba el numero"></td>
+		</tr>
+        <tr>
+            <td><label for="x">X(LATITUD):</label></td>
+			<td><input type="text" name="x" placeholder="escriba la latitud"></td>
+		</tr>
+        <tr>
+            <td><label for="x">Y(LONGITUD):</label></td>
+			<td><input type="text" name="y" placeholder="escriba la longitud"></td>
+		</tr>
+
+
+		<tr>
+			<td colspan="2" style="text-align: center">
+				<input type="submit" value="Enviar archivo">
+			</td>
+		</tr>
+	</table>
+</div>
+</main>
+	
+    <footer>
+      <div class="container">
+        <ul class="social-media">
+          <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <div class="links">
+          <a href="#">Aviso legal</a>
+          <a href="#">Sobre cookies</a>
+        </div>
+      </div>
+    </footer>
+</form>
+</body>
+</html>

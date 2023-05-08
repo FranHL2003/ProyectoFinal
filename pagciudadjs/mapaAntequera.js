@@ -7,28 +7,9 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-var lista = []
-var elementoSeleccionado = 0;
 
 
-
-function cargarModal(){
-    let elemento = lista[0]
-    let nombre = document.getElementById('nombreElemento')
-    let direccion = document.getElementById('direccionElemento')
-    let horario = document.getElementById('horarioElemento')
-    let telefono = document.getElementById('telefonoElemento')
-    direccion.classList.add('mb-2')
-    horario.classList.add('mb-2')
-    telefono.classList.add('mb-2')
-    nombre.textContent = elemento.nombre
-    direccion.textContent = elemento.direccion
-    horario.textContent = elemento.horario
-    telefono.textContent = elemento.telefono
-}
-
-
-fetch("antequera.json")
+fetch("jsoncity/antequera.json")
     .then(res => res.json())
     .then(data => {
         const tbody = document.querySelector("#listaElementos");
