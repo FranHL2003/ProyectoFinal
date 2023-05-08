@@ -1,6 +1,6 @@
 
 
-var map = L.map('mapa').setView([36.7189, -4.4171], 15);
+var map = L.map('mapa').setView([36.8366, -2.4569], 15);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     minZoom: 14,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -17,7 +17,7 @@ function cargarModal(){
 
 }
 
-fetch("http://localhost/Proyecto%20fin%20de%20grado/test.php?province=Malaga")
+fetch("http://localhost/Proyecto%20fin%20de%20grado/test.php?province=Almeria")
     .then(res => res.json())
     .then(data => {
         const tbody = document.querySelector("#listaElementos");
