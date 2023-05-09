@@ -31,12 +31,14 @@ fetch("http://localhost/Proyecto%20fin%20de%20grado/test.php?province=Jaen")
             let categoria = clone.getElementById('categoria')
             let direccion = clone.getElementById('direccion')
             let telefono = clone.getElementById('telefono')
+            let ver = clone.getElementById('ver')
             nombre.textContent = data[i].nombre;
             horario.textContent = data[i].horario;
             categoria.textContent = data[i].categoria;
             direccion.textContent = data[i].direccion;
             telefono.textContent = data[i].telefono;
             ciudad.textContent = data[i].ciudad;
+            ver.textContent = data[i].ver;
             if (telefono.textContent != "") {
                 telefono.classList.add('tarjeta')
             }
@@ -49,6 +51,7 @@ fetch("http://localhost/Proyecto%20fin%20de%20grado/test.php?province=Jaen")
                 direccion: data[i].direccion,
                 telefono: data[i].telefono,
                 ciudad: data[i].ciudad,
+                ver: data[i].ver,
 
             }
             lista.push(elemento)

@@ -7,12 +7,174 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="inicio.css">
     <title>Turismo</title>
+    <style>
+
+
+  body{
+    height: 800px;
+    background-image: url(/Proyecto%20fin%20de%20grado/inicio_img/malaga.jpg);
+    background-size:cover;
+    background-size:250vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    font-family: Arial, sans-serif;
+    margin:0;
+  }
+
+  a{text-decoration: none;
+color:white}
+header {
+  background-color: #1abc9c;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.container {
+  flex: 1;
+}
+.logo img {
+  max-width: 60px;
+  height: auto;
+}
+
+.logo {
+  margin-left: auto;
+ 
+}
+.logo {
+  margin-right: 70px;
+}
+
+
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-left: 20px;
+  }
+  
+  .menu li:first-child {
+    margin-left: 0;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .toggle {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  
+  .card {
+    width: 35%;
+    margin-right: 80px;
+    margin-left: 90px;
+    margin-bottom: 40px;
+    border: 1px solid #6c5030;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #dfc198;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+   
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  
+  .card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .card p {
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .card a {
+    display: inline-block;
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .card a:hover {
+    background-color: #148f77;
+  }
+  
+  footer {
+    background-color: #1abc9c;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 100%;
+  }
+  
+  .social-media {
+    list-style: none;
+    display: flex;
+  }
+  
+  .social-media li {
+    margin-right: 20px;
+  }
+  
+  .social-media li a {
+    color: #fff;
+    text-decoration: none;
+    width: 100px;
+  }
+  
+  .links a {
+    margin-left: 20px;
+
+    color: #fff;
+    text-decoration: none;
+  }
+  
+
+    </style>
 </head>
 <body>
   <header>
     <div class="container">
     
-      <a href="inicio.html"><h1>PASEA POR TU HISTORIA</h1></a>
+      <a href="inicio.html"><h1>NAVEGA EN NUESTROS MAPAS</h1></a>
       <nav>
         <ul class="menu">
           <li><a href="#">Sobre nosotros</a></li>
@@ -46,7 +208,7 @@
             <img src="/Proyecto fin de grado/inicio_img/malaga.jpg" alt="Ciudad 2">
             <h2>Málaga</h2>
             <p>Málaga es una ciudad y municipio español, capital de la provincia homónima, situada en la comunidad autónoma de Andalucía.</p>
-            <a href="mapaMalaga.html">Ver mapa interactivo</a>
+            <a href="/Proyecto fin de grado/pagciudad/mapaMalaga.html">Ver mapa interactivo</a>
           </div>
           <div class="card">
             <img src="/Proyecto fin de grado/inicio_img/jaen.jpg" alt="Ciudad 3">
@@ -62,45 +224,45 @@
              la cuarta de España​ después de Madrid, Barcelona y Valencia y la 32.ª de la Unión Europea.</p>
             <a href="/Proyecto fin de grado/pagciudad/mapaSevilla.html">Ver mapa interactivo</a>
           </div>
-          <div class="card">
+          <!--div class="card">
             <img src="/Proyecto fin de grado/inicio_img/Jerez.jpg" alt="Ciudad 3">
             <h2>Jerez de la Frontera</h2>
             <p>Jerez de la Frontera, llamada habitualmente Jerez, es una ciudad de la región de Andalucía (sur de España). Su casco histórico rodea el Alcázar de Jerez, una fortaleza árabe del siglo XI. La Real Escuela Andaluza del Arte Ecuestre es una escuela de equitación prestigiosa que organiza espectáculos ecuestres y cuenta con un museo de carruajes.
              La ciudad también es conocida por la música flamenca y la elaboración de jerez en el llamado triángulo de jerez, que se encuentra al oeste.</p>
             <a href="#">Ver mapa interactivo</a>
-          </div>
+          </div-->
           <div class="card">
             <img src="/Proyecto fin de grado/inicio_img/Cordoba.jpg" alt="Ciudad 3">
             <h2>Córdoba</h2>
             <p>Córdoba es una ciudad del sur de la región de Andalucía, en España, y es la capital de la provincia de Córdoba. Fue una importante ciudad romana y uno de los 
               principales centros islámicos de la Edad Media. Es conocida por la enorme Mezquita que data del año 784 d. C., con un salón de oración con columnas y antiguos mosaicos bizantinos. 
                 Después de convertirse en una iglesia católica en 1236, se agregó una nave de estilo renacentista en el siglo XVII.</p>
-            <a href="#">Ver mapa interactivo</a>
+            <a href="/Proyecto fin de grado/pagciudad/mapaCordoba.html">Ver mapa interactivo</a>
           </div>
-          <div class="card">
+          <!--div class="card">
             <img src="/Proyecto fin de grado/inicio_img/antequera.jpg" alt="Ciudad 3">
             <h2>Antequera</h2>
             <p>Antequera es una ciudad y un municipio español de la provincia de Málaga, en Andalucía. Situada en el norte de la provincia, es el centro de la comarca que lleva su 
               nombre y la cabeza del partido judicial homónimo.​En 2022 contaba con 41 184 habitantes</p>
             <a href="mapaAntequera.html">Ver mapa interactivo</a>
-          </div>
-          <div class="card">
+          </div-->
+          <!--div class="card">
             <img src="/Proyecto fin de grado/inicio_img/Loja.jpg" alt="Ciudad 3">
             <h2>Loja</h2>
             <p>Loja es una ciudad y municipio español de la provincia de Granada, en la comunidad autónoma de Andalucía. Cuenta con una población de 20 555 habitantes.
               Destaca por sus iglesias y monumentos. Cuenta con un palacio Alcazaba de la época árabe y un imponente castillo. Es un lugar de cultura y tradición.
             </p>
             <a href="/Proyecto fin de grado/pagciudad/mapaLoja.html">Ver mapa interactivo</a>
-          </div>
-          <div class="card">
+          </div-->
+          <!--div class="card">
             <img src="/Proyecto fin de grado/inicio_img/Lucena.jpg" alt="Ciudad 3">
             <h2>Lucena</h2>
             <p>Lucena es una ciudad y un municipio español de la provincia de Córdoba, Andalucía. Según el INE, en 2021 contaba con 42.712 habitantes. Su extensión es de 351 km² y tiene una densidad de 118,79 hab/km². 
               Se encuentra situada a una altitud de 487 metros y a 67 kilómetros de la capital de provincia, Córdoba.
             Destaca por sus tradiciones, gstronomía y ámplia oferta cultural.</p>
             <a href="mapaLucena.html">Ver mapa interactivo</a>
-          </div>
-          <div class="card">
+          </div-->
+          <!--div class="card">
             <img src="/Proyecto fin de grado/inicio_img/ubeda.jpg" alt="Ciudad 3">
             <h2>Úbeda</h2>
             <p>Úbeda es una ciudad y municipio español de la provincia de Jaén, capital de la comarca de La Loma, en la comunidad autónoma de Andalucía.
@@ -108,8 +270,8 @@
               Es una ciudad con amplia tradición gastronómica y con una artesanía muy peculiar.
             </p>
             <a href="mapaUbeda.html">Ver mapa interactivo</a>
-          </div>
-          <div class="card">
+          </div-->
+          <!--div class="card">
             <img src="/Proyecto fin de grado/inicio_img/baeza.jpg" alt="Ciudad 3">
             <h2>Baeza</h2>
             <p>Baeza es una ciudad y municipio de España, en la provincia de Jaén. Está integrada en la comarca de La Loma y es cabeza del partido judicial de Baeza.
@@ -117,8 +279,8 @@
                Baeza cuenta con impresionates monumentos como su catedral o su universisad.
             </p>
             <a href="mapaBaeza.html">Ver mapa interactivo</a>
-          </div>
-          <div class="card">
+          </div-->
+          <!--div class="card">
             <img src="/Proyecto fin de grado/inicio_img/ecija.jpg" alt="Ciudad 3">
             <h2>Écija</h2>
             <p>Écija es un municipio español y una ciudad perteneciente a la provincia de Sevilla, en Andalucía. Ubicado en la comarca del mismo nombre.
@@ -127,7 +289,7 @@
                Su extensión es de 978,73 km², siendo la mayor de toda la provincia de Sevilla.
             </p>
             <a href="#">Ver mapa interactivo</a>
-          </div>
+          </div-->
           <div class="card">
             <img src="/Proyecto fin de grado/inicio_img/huelva.jpg" alt="Ciudad 3">
             <h2>Huelva</h2>
@@ -143,17 +305,17 @@
             <p>Almería es una ciudad y municipio español, capital de la provincia homónima, en la comunidad autónoma de Andalucía.
                Es el centro neurálgico de la Comarca Metropolitana de Almería, en el extremo sureste de la península ibérica y de 
                la comarca turística de Almería-Cabo de Gata-Níjar.​</p>
-            <a href="#">Ver mapa interactivo</a>
+            <a href="/Proyecto fin de grado/pagciudad/mapaAlmeria.html">Ver mapa interactivo</a>
           </div>
-          <div class="card">
+          <!--div class="card">
             <img src="/Proyecto fin de grado/inicio_img/velezMalaga.jpg" alt="Ciudad 3">
             <h2>Velez-Málaga</h2>
             <p>Vélez-Málaga es una ciudad y un municipio de la provincia de Málaga, en la comunidad autónoma de Andalucía, España. Es la ciudad más importante de la comarca de La Axarquía, 
               la sede de la Mancomunidad de Municipios de la Costa del Sol-Axarquía​ y la cabeza del partido judicial que lleva su nombre.
               Destaca por su amplia oferta cultural.​</p>
             <a href="mapaVelez.html">Ver mapa interactivo</a>
-          </div>
-          <div class="card">
+          </div-->
+          <!--div class="card">
             <img src="/Proyecto fin de grado/inicio_img/Cabra.jpg" alt="Ciudad 3">
             <h2>Cabra</h2>
             <p>Cabra es una ciudad y un municipio español de la provincia de Córdoba, en Andalucía. Su término municipal se sitúa en el centro geográfico de la comunidad autónoma, y se considera la puerta al parque natural de las Sierras Subbéticas,
@@ -206,6 +368,15 @@
             <p>Traducción del inglés-Roquetas de Mar es un municipio de la provincia de Almería, en la comunidad autónoma de Andalucía, España. En 2016, la población era de 91.965, siendo el segundo municipio con mayor población de la provincia por detrás de la capital, 
               el 14 de Andalucía y el 69 de España. Destaca por su oferta de sol y playa.</p>
             <a href="#">Ver mapa interactivo</a>
+          </div-->
+          <div class="card">
+            <img src="/Proyecto fin de grado/inicio_img/puertoStaMaria.jpg" alt="Ciudad 3">
+            <h2>Cádiz</h2>
+            <p>Cádiz es quizás la ciudad más divertida de España. En sus calles estrechas, su luminosa bahía y la amplia
+              oferta cultural que tiene, es uno de los destinos preferidos por los turistas.
+              Sus playas Atlánticas ofrecen gran variedad de posibilidades para deportes acuáticos como el surf.
+            </p>
+            <a href="/Proyecto fin de grado/pagciudad/mapaCadiz.html">Ver mapa interactivo</a>
           </div>
          
          
