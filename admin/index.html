@@ -25,9 +25,59 @@ body{
     margin:0;
   }
       
-      h1{
-        color:white;
-      }
+  
+		.titulo{
+      text-align: center;
+			color: #85cd85;
+			font-size: 3em;
+			margin-top: 50px;
+    }
+
+		h1 {
+			color: #ffffff;
+     
+		}
+
+		form {
+			background-color: #ba9c6b;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+			max-width: 600px;
+			margin: 0 auto;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 5px;
+			font-weight: bold;
+			color: #666;
+		}
+
+		input[type="text"] {
+			padding: 10px;
+			border: 2px solid #ccc;
+			border-radius: 5px;
+			font-size: 16px;
+			margin-bottom: 15px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		input[type="submit"] {
+			background-color: #2bce95;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	
       
       /*footer y header*/
       a{text-decoration: none;
@@ -139,7 +189,36 @@ body{
   <main>
 
     <div class="contenedor">
-    <H1>NUEVO LUGAR</H1>
+     
+        <h1 class="titulo">Ingrese una nueva ciudad:</h1>
+        <form action="datosConexion.php" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre"><br>
+      
+          <label for="ciudad">Ciudad:</label>
+          <input type="text" name="ciudad" id="ciudad"><br>
+      
+          <label for="categoria">Categoría:</label>
+          <input type="text" name="categoria" id="categoria"><br>
+      
+          <label for="direccion">Dirección:</label>
+          <input type="text" name="direccion" id="direccion"><br>
+      
+          <label for="horario">Horario:</label>
+          <input type="text" name="horario" id="horario"><br>
+      
+          <label for="ver">Ver:</label>
+          <input type="text" name="ver" id="ver"><br>
+      
+          <label for="x">X:</label>
+          <input type="text" name="x" id="x"><br>
+      
+          <label for="y">Y:</label>
+          <input type="text" name="y" id="y"><br>
+      
+          <input type="submit" value="Agregar ciudad">
+        </form>
+   
     </div>
 
   
