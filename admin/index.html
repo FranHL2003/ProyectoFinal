@@ -23,12 +23,13 @@ body{
     background-position: center center;
     font-family: Arial, sans-serif;
     margin:0;
+    
   }
       
   
 		.titulo{
       text-align: center;
-			color: #85cd85;
+			color: #ffffff;
 			font-size: 3em;
 			margin-top: 50px;
     }
@@ -78,6 +79,24 @@ body{
 			background-color: #3e8e41;
 		}
 	
+
+    .destacado {
+
+ background-color: #e5e2d5;
+ padding: 30px 50px;
+ margin:20px;
+
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ clip-path: polygon(0 0, 95% 0, 100% 50%, 95% 100%, 0 100%);
+
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+			max-width: 600px;
+			
+
+}
       
       /*footer y header*/
       a{text-decoration: none;
@@ -193,33 +212,50 @@ body{
         <h1 class="titulo">Ingrese una nueva ciudad:</h1>
         <form action="datosConexion.php" method="post">
           <label for="nombre">Nombre:</label>
-          <input type="text" name="nombre" id="nombre"><br>
+          <input type="text" name="nombre" id="nombre" placeholder="en mayusculas" required><br>
       
           <label for="ciudad">Ciudad:</label>
-          <input type="text" name="ciudad" id="ciudad"><br>
+          <input type="text" name="ciudad" id="ciudad" placeholder="primera letra mayuscula" required><br>
       
           <label for="categoria">Categoría:</label>
-          <input type="text" name="categoria" id="categoria"><br>
+          <input type="text" name="categoria" id="categoria" placeholder="Parque, Palacio, Iglesia, Moumento, Museo, Edificio Histórico" required><br>
       
           <label for="direccion">Dirección:</label>
-          <input type="text" name="direccion" id="direccion"><br>
+          <input type="text" name="direccion" id="direccion" placeholder="Nombre de la Calle" required><br>
       
           <label for="horario">Horario:</label>
-          <input type="text" name="horario" id="horario"><br>
+          <input type="text" name="horario" id="horario" placeholder="Si no se sabe (no se sabe)"required><br>
       
-          <label for="ver">Ver:</label>
-          <input type="text" name="ver" id="ver"><br>
       
           <label for="x">X:</label>
-          <input type="text" name="x" id="x"><br>
+          <input type="text" name="x" id="x" placeholder="latitud(ver en openstreetmap)" required><br>
       
           <label for="y">Y:</label>
-          <input type="text" name="y" id="y"><br>
+          <input type="text" name="y" id="y" placeholder="longitud(ver en openstreetmap)" required><br>
+
+   
+        <input type="submit" value="Agregar Lugar">
+  
+         
+    </form>
+
+
+  
+
+        <h1 class="titulo">Borrar registro por nombre:</h1>
+        <form action="borrar_registro.php" method="post">
+          <label for="nombre">Nombre:</label>
+          <input type="text" name="nombre" id="nombre"><br>
       
-          <input type="submit" value="Agregar ciudad">
+          <input type="submit" value="Borrar registro">
         </form>
+
+       
+        <p>Gracias por usar nuestra app</p>
    
     </div>
+
+
 
   
   
